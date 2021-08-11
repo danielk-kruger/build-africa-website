@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAT Phase 3 - Website</title>
+
+    <script src="https://kit.fontawesome.com/2ee408b1cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar toggle for mobile phones  -->
+    <div class="burger show">
+      <i class="fas fa-bars" id="open_panel"></i>
+    </div>
+
+    <!-- Navigation Panel -->
+    <div class="header" id="nav_panel">
+      <div class="close-panel">
+        <i class="fas fa-times" id="close_panel_btn"></i>
+      </div>
+      <div class="nav-container">
+        <div class="logo-container">
+          <!-- LOGO IS PLACED HERE -->
+          <img src="./img/build_africa.png" alt="Build africa" />
+        </div>
+        <div class="wrapper">
+          <nav>
+            <ul class="navbar">
+              <li><a href="#home" class="nav-link active">Home</a></li>
+              <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li><a href="#analysis" class="nav-link">Analysis</a></li>
+              <li><a href="#conclusion" class="nav-link">References</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-content" id="content">
+      <div class="container" id="home">
+        <div class="content-heading">
+          <h2>Build Africa!</h2>
+          <p>By Daniel Kruger</p>
+        </div>
+
+        <!-- Introduction Section / Home page -->
+        <section class="section-1">
+          <p>
+            Despite Africa's fast demographic growth, people feel like they can make a better life
+            for themselves <strong>abroad</strong>. <br />
+            What will it take for our countries to <strong>unleash</strong> their economic
+            <strong>potential</strong> ?
+            <span>Let's build Africa!</span>
+          </p>
+
+          <div class="view-options">
+            <h3>View Report</h3>
+            <a href="#" class="link-project">MS Word</a>
+            <a href="#" class="link-project">PDF</a>
+          </div>
+        </section>
+        <div class="scroll-next">
+          <a data-scroll href="#portfolio" class="scroll-next-btn">
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Portfolio Section -->
+      <section class="section-2" id="portfolio">
+        <div class="section-2_container">
+          <div class="portfolio-intro">
+            <h2 class="portfolio-heading" id="heading_card_1">
+              Factors hindering Africa's economic potential
+            </h2>
+          </div>
+          <div class="cards-container">
+            <div class="factors-cards">
+              <div class="card first">
+                <div class="card-heading">
+                  <h3>
+                    Over-dependence <br />
+                    on foreign assistance
+                  </h3>
+                </div>
+                <div class="card-content">
+                  <div class="card-content_body">
+                    <img
+                      src="./img/World Humanitarian Day-pana.svg"
+                      id="aid_img"
+                      alt="Over-dependence on aid"
+                    />
+                  </div>
+                </div>
+                <div class="card-footer" id="footer-1">
+                  <span class="card-footer-description">view solution</span>
+                  <p>
+                    We should engage in activities that generate revenue instead of budgeting for
+                    foreign aid.
+                  </p>
+                </div>
+              </div>
+              <div class="card second">
+                <div class="card-heading">
+                  <h3>Technology Limitations</h3>
+                </div>
+                <div class="card-content">
+                  <div class="card-content_body" style="width: 307px; height: 215px">
+                    <img src="./img/Visionary technology-amico.svg" alt="Technology" />
+                  </div>
+                </div>
+                <div class="card-footer" id="footer-2">
+                  <span class="card-footer-description">view solution</span>
+                  <p>
+                    African countries should invest in technological capabilities, this should
+                    reduce economic hindrances.
+                  </p>
+                </div>
+              </div>
+              <div class="card third">
+                <div class="card-heading">
+                  <h3>Poor Education</h3>
+                </div>
+                <div class="card-content">
+                  <div class="card-content_body">
+                    <img src="./img/Teaching-amico.svg" alt="Ethical Teachers" />
+                  </div>
+                </div>
+                <div class="card-footer" id="footer-3">
+                  <span class="card-footer-description">view solution</span>
+                  <p class="third-child">
+                    Well trained, motivated and ethical teachers are essential to help our students
+                    learn the right way.
+                  </p>
+                </div>
+              </div>
+              <div class="card fourth">
+                <div class="card-heading">
+                  <h3>
+                    Poorly planned economic <br />
+                    structures
+                  </h3>
+                </div>
+                <div class="card-content">
+                  <div class="card-content_body">
+                    <img src="./img/Create-bro.svg" alt="Create Idea" />
+                  </div>
+                </div>
+                <div class="card-footer" id="footer-4">
+                  <span class="card-footer-description">view solution</span>
+                  <p>
+                    Establish economic plans which make use of the vast raw materials in africa,
+                    <br />
+                    reduce budget on western imports.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Analysis section -->
+      <section class="section-3" id="analysis">
+        <div class="section-3_container">
+          <div class="analysis-intro">
+            <h2 class="analysis-heading" id="heading_card_2">Summarized Analogy</h2>
+          </div>
+          <div class="summary">
+            <p>
+              I hosted a survey on google forms, to hear people's experiences and opinions with this
+              investigation
+              <br />
+              The menu below will show each of my most interesting findings
+            </p>
+          </div>
+          <div class="menu">
+            <button type="button" class="menu_header" id="first_header">
+              Effects of Migration
+            </button>
+            <div class="menu_body">
+              <div class="menu_body-wrapper">
+                <div class="text-area">
+                  <p>
+                    From the survey that I conducted, there was an almost stalemate result on the
+                    people that wished to stay and leave africa.
+                  </p>
+                </div>
+                <div class="graph-section">
+                  <div class="pie_chart"></div>
+                  <ul class="key">
+                    <li>
+                      <strong class="percent red">40%</strong>
+                      <span class="choice">Would rather go overseas</span>
+                    </li>
+                    <li>
+                      <strong class="percent yellow">30%</strong>
+                      <span class="choice">Happy with their country</span>
+                    </li>
+                    <li>
+                      <strong class="percent blue">30%</strong
+                      ><span class="choice">Affected by the country's development rate</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <button type="button" class="menu_header">Effects of Exports</button>
+            <div class="menu_body">
+              <div class="menu_body-wrapper">
+                <iframe
+                  src="https://tradingeconomics.com/embed/?s=satbex&v=202107301221v20200908&h=300&w=600&ref=/south-africa/exports"
+                  height="200"
+                  width="500"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+                <div class="text-area">
+                  <p>
+                    Exports from South Africa were up to 2% per month. Due to sales of precious
+                    metals and stones, chemicals, and vegetable products
+                  </p>
+                  <br />
+                  <p>Shipments went to: USA, China, Germany, the UK and Japan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <button type="button" class="menu_header" id="last_header">
+              Effects of the Pandemic
+            </button>
+            <div class="menu_body" id="last-body">
+              <div class="menu_body-wrapper">
+                <div class="graph-section">
+                  <img src="./img/covid-impact.png" alt="Covid-19 chart impact" />
+                  <span
+                    >Notes: Agri&ff = Agriculture, fishing and forestry, Trdacc = Trade and
+                    accommodation services, Fin&bs = Financial and business services.</span
+                  >
+                </div>
+                <div class="text-area">
+                  Impacts on value for industries experiencing the shock, <br />
+                  as percentages increases from their pre-crisis levels.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="conclusion">
+        <div class="conclusion-intro">
+          <h2 class="conclusion-heading lead">Conclusion</h2>
+        </div>
+        <div class="footer">
+          <div class="footer-header">
+            <h2 class="lead">Let's build Africa!</h2>
+          </div>
+          <div class="footer-content">
+            <div class="about">
+              <ul>
+                <li>About this Project</li>
+                <li>Daniel Kruger</li>
+                <li>CAT Grade 12</li>
+                <li>
+                  Development requirements <br />
+                  and solutions for africa
+                </li>
+              </ul>
+            </div>
+            <div class="references">
+              <ul>
+                <li>Reference links</li>
+                <li>
+                  <a
+                    href="https://theconversation.com/what-needs-to-be-done-to-make-africa-politically-stable-88978"
+                    >Stability in Africa</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.imf.org/external/np/exr/ib/2000/120100.htm"
+                    >Poverty Reduction for growth</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.unfpa.org/resources/population-and-development-africa"
+                    >Population and development in Africa</a
+                  >
+                </li>
+                <li>
+                  <a href="https://tradingeconomics.com/south-africa/exports"
+                    >South African Trade exports</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="scroll-next">
+            <a data-scroll href="#home" class="scroll-next-btn">
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/smooth-scroll.polyfills.min.js" defer></script>
+    <script src="js/Main.js" defer></script>
+  </body>
+</html>
