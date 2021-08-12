@@ -219,15 +219,15 @@ h2 {
   box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
-  background-color: #212121;
-  color: #f3f3f3;
+  background-color: #f1f1f1;
+  color: #212121;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
 }
 .wrapper-content #home > .section-1 .view-options > .link-project:hover {
-  background-color: lightsalmon;
-  color: #212121;
+  background-color: #212121;
+  color: #f1f1f1;
   transform: scale(1.1);
 }
 .wrapper-content #home > .section-1 h3 {
