@@ -154,6 +154,7 @@ h2 {
 }
 .header > .nav-container .wrapper > nav > .navbar > li > a.active {
   color: #212121;
+  text-decoration: underline;
 }
 
 .wrapper-content {
@@ -173,7 +174,8 @@ h2 {
   align-items: center;
 }
 .wrapper-content #home .content-heading {
-  margin: 2rem 0;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
 }
 .wrapper-content #home .content-heading h2 {
   font-size: 4em;
@@ -209,7 +211,7 @@ h2 {
   margin-top: 20px;
 }
 .wrapper-content #home > .section-1 .view-options > .link-project {
-  border: none;
+  border: 2px solid #212121;
   outline: none;
   padding: 10px;
   font-size: 16px;
@@ -219,7 +221,7 @@ h2 {
   box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
-  background-color: #f1f1f1;
+  background-color: #f3f3f3;
   color: #212121;
   cursor: pointer;
   display: inline-block;
@@ -227,7 +229,7 @@ h2 {
 }
 .wrapper-content #home > .section-1 .view-options > .link-project:hover {
   background-color: #212121;
-  color: #f1f1f1;
+  color: #f3f3f3;
   transform: scale(1.1);
 }
 .wrapper-content #home > .section-1 h3 {

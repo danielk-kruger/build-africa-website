@@ -27,6 +27,12 @@ openPanel.addEventListener('click', () => {
   open_Panel();
 });
 
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 400,
+  speedAsDuration: true,
+  easing: 'easeOutQuad',
+});
+
 // Close the panel if the nav items have been closed in mobile mode
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener('click', () => {
@@ -49,12 +55,6 @@ function findFooter(e) {
 
 toggleFooter.addEventListener('click', (e) => {
   findFooter(e);
-});
-
-const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 400,
-  speedAsDuration: true,
-  easing: 'easeOutQuad',
 });
 
 // Highlight the current section on the Navbar
@@ -80,6 +80,21 @@ function alterActiveSection() {
       }
     }
   });
+}
+
+let menus = document.getElementsByClassName('menu_header');
+
+for (let i = 0; i < menus.length; i++) {
+  menus[i].onclick = function () {
+    let content = this.nextElementSibling;
+    this.classList.toggle('is-open');
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  };
 }
 
 window.addEventListener('scroll', () => {
@@ -135,18 +150,3 @@ function revealCards(cards) {
 }
 
 revealCards(cardsList);
-
-let menus = document.getElementsByClassName('menu_header');
-
-for (let i = 0; i < menus.length; i++) {
-  menus[i].onclick = function () {
-    let content = this.nextElementSibling;
-    this.classList.toggle('is-open');
-
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + 'px';
-    }
-  };
-}
